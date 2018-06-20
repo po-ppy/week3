@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <form action="1.php" method="get">
+        <label for="uname">用户名:</label>
+        <input id="uname" type="text" placeholder="请输入你的用户名" maxlength="3">
+        <br>
+        <label for="upwd">密&nbsp;&nbsp;&nbsp;码:</label>
+        <input id="upwd" type="password" placeholder="请输入你的密码" >
+        <br>
+        <input type="button" value="普通按钮">
+        <br>
+        <input type="reset" value="重置按钮">
+        <br>
+        <input type="submit" value="提交按钮">
+        <p>
+            男：<input type="radio" name="sex" value="male">
+            女：<input type="radio" name="sex" value="female">
+        </p>sex
+        <p>
+            <h3>选择你的爱好</h3>
+            读书：<input type="checkbox" name="hobby">
+            唱歌：<input type="checkbox" name="hobby">
+            跳舞：<input type="checkbox" name="hobby">
+        </p>
+        <p>
+            <input type="file" formenctype="multipart/form-data">
+        </p> 
+        <hr size="10" color="gray">
+        <textarea name="d" id="" cols="14" rows="6"></textarea>
+    </form>
+
+    <hr size="10" color="gray">
+    <select name="ss" id="ss对对对1">
+        <option value="val1" >对对对1</option>
+        <option value="val2">对对对2</option>
+        <option value="val3" selected>对对对3</option>
+    </select>
+    <hr size="10" color="gray">
+</body>
+</html>
