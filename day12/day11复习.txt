@@ -52,3 +52,40 @@ h1-h6 字体从大到小，定义各级标题
 <table>
 	属性
 		bgcolor,border/width/height/align/cellspacing/cellpadding
+<tr>
+	属性
+		bgcolor/align/valign
+<td>
+	属性
+		bgcolor/width/height/align/valign
+		rowspan 跨行 从上往下依次合并
+		colspan 跨列 从左到右依次合并
+
+列表
+	类型
+		无序列表	<ul></ul>
+			属性
+				type
+					1.circle
+					2.desc
+					3.square
+					4.none
+		有序列表	<ol></ol>
+			属性
+				type
+					1.1
+					2.a
+					3.A
+					4.i
+					5.I
+	列表嵌套
+		1.ul/ol中只能直接包含列表项li
+		2.li可以包含嵌套任何元素，包括ol/ul
+
+结构标记
+	<header></header>
+	<nav></nav>
+	<section></section>
+	<aside></aside>
+	<article></article>
+	<footer></footer>
