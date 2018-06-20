@@ -123,5 +123,18 @@
                             for
                                 值：与文本关联的表单控件的id值
 
-
-
+iframe元素
+	作用
+		允许在一个页面引入另一个页面
+	语法
+		标记
+			<iframe></iframe>
+		属性
+			src
+				要引入页面的URL
+			width
+				宽度
+			height
+				高度
+			frameborder
+				浮动框架的边框宽度，默认是1
