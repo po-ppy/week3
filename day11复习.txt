@@ -1,0 +1,24 @@
+HTML
+html 4.01 html5
+基础元素
+文本元素 行内元素
+<a href="https://www.jd.com"></a>
+<a href="锚点"></a>
+<b></b> 文本加粗
+<i></i> 斜体
+<s></s> 删除线
+<u></u> 下划线
+<sub></sub>下标
+<sup></sup>上标
+<span></span>
+标题元素
+h1-h6 字体从大到小，定义各级标题
+分区元素 块级元素（独自占一行显示）
+<p></p>
+<div></div>
+特殊标记
+	&copy; ©
+	&nbsp; 空格
+	&lt; <
+	&gt; >
+	&yen; ￥
