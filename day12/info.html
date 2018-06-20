@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工信息</title>
+</head>
+<body>
+<h2>员工的基本信息</h2>
+<form action="" method="get">
+    <p>
+        <label for="uname">姓名：</label>
+        <input  id="uname" type="text" placeholder="请输入用户名称">
+    </p>
+    <p>
+        <label for="upwd">密码：</label>
+        <input id="upwd" type="password" placeholder="请输入用户密码">
+    </p>
+    <p>
+        <label for="sex">用户性别：</label>
+
+        <input type="radio" name="sex">男
+        <input type="radio" name="sex">女
+    </p>
+    <p>
+        用户爱好：
+        <input type="checkbox" name="hobby">吃
+        <input type="checkbox" name="hobby">喝
+        <input type="checkbox" name="hobby">玩
+        <input type="checkbox" name="hobby">乐
+    </p>
+    <p>
+        <label for="file">用户头像：</label>
+        <input id="file" type="file">
+    </p>
+    <p><label for="infos">个人介绍:</label>
+
+        <textarea name="infos" id="infos" cols="30" rows="10" >
+这个人很懒，什么也没留下...</textarea>
+    </p>
+    <p>
+        <label for="home">居住地址:</label>
+        <select name="home" id="home">
+            <option value="beijing" selected>北京</option>
+            <option value="shanghai">上海</option>
+            <option value="shenzhen">深圳</option>
+        </select>
+    </p>
+    <p>
+        <label for="lan">选学课程：</label>
+
+        <select name="lan" id="lan" size="4" multiple>
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">javascript</option>
+            <option value="">ajax</option>
+        </select>
+    </p>
+    <p>
+        <input type="button" value="登录">
+        <input type="reset" value="重置">
+    </p>
+</form>
+
+</body>
+</html>
