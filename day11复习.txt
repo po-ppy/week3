@@ -26,3 +26,29 @@ h1-h6 字体从大到小，定义各级标题
 <img src="">
 链接 -> 路径
 绝对路径：
+	https://www.baidu.com/img/1.jpg
+	D:\web\img\1.jpg
+相对路径：
+	../img/1.jpg
+表格：
+	<table>
+		<tr>
+			<td></td>
+		</tr>
+	</table>
+
+	<table>
+		<thead>
+			<th></th>
+		</thead>
+		<tbody>
+			<tr>
+				<td></td>
+			</tr>
+		</tbody>
+		<tfoot>
+		</tfoot>
+	</table>
+<table>
+	属性
+		bgcolor,border/width/height/align/cellspacing/cellpadding
