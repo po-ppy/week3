@@ -266,4 +266,90 @@ CSS语法规范
 				background:url() no-repeat position;
 					ex
 						background:url("1.jpg") no-repeat -20px 40px;
-				
+	文本格式化属性
+		1.指定文体
+			font-family:"微软雅黑,Arial"
+		2.字体大小
+			font-size:??px/pt
+		3.文字加粗
+			font-weight:bold/（400-900）
+		4.字体样式
+			font-style:normal/italic
+		简写方式
+			font:style weight size family;
+	文本属性
+		1.文本颜色
+			color
+		2.文本修饰
+			text-decoration
+			取值
+				none
+				underline 下划线
+				overline 上划线
+		3.行高
+			属性
+				line-height
+			取值
+				以px为单位的数值
+	
+	补充
+		table边框合并
+			属性
+				border-collapse
+			取值
+				separate 分离
+				collapse 边框合并
+		颜色单位取值
+			1.tgb(r,g,b)
+				r,g,b的取值范围为0-255
+			2.#rrggbb 
+				r,g,b的取值范围为十六进制是，0-F
+				ex
+					#3a3a3a
+			3.#rgb
+				当每两位重合时可以简写
+				#f00
+			4.rgba(r,g,b,a) a的取值范围0-1（透明度，1完全不透明）
+			5.英文单词
+				opacity
+					透明度
+					取值 0-1
+		定位
+			1.普通流定位
+				每个元素都有自己的独立的空间
+				行内元素按照从左往右的顺序进行依次排列
+				块级元素按照从上往下的顺序进行排列
+				每个元素默认出现在父元素的左上角
+			2.固定定位
+				定在页面的某一个位置处，不随页面的滚动而滚动
+				定位属性
+					position
+				取值
+					fixed
+				配合top/left/bottm/right
+				影响
+					1.脱离文本流
+					2.固定定位的元素会变为块级元素
+					3.所有固定定位的元素都是相对于body进行位置偏移
+			3.相对定位
+				相对于元素原来的位置进行位置的偏移
+				定位属性
+					position
+				取值
+					relative
+				配合top/left/bottom/right
+					top:20px 元素向下移20px
+					top:-20px 元素向上移20px
+				使用
+					1.进行元素位置的微调
+					2.配合绝对定位使用
+			4.绝对定位
+				相对已经定位过的祖先元素进行位置的偏移，如果没有已经定位过的祖先元素则相对于body进行定位
+				定位属性
+					position
+				取值
+					absolute
+				影响
+					脱离文本流——不占据页面空间
+					绝对定位的元素变为块级元素
+			5.浮动定位
