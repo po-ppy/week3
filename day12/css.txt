@@ -66,5 +66,204 @@ CSS语法规范
 					<head>
 						<link rel="stylesheet" href="xxx.css"/>
 					</head>
-			
-					
+	CSS样式特征
+		1.继承性
+			子元素继承父元素的设置的样式（高度、内外边距不能继承）
+			<div>
+				some words
+				<p>p some words</p>
+			</div>
+		2.层叠性
+			为一个元素设置多个样式规则，当样式规则不冲突的情况下，可以同时作用在该元素上
+			div {
+				color:red;
+				}
+			div {
+				font-size:16px;
+				}
+		3.优先级
+			在层叠样式的基础上，如果样式冲突，则按照默认的优先级规则去使用样式
+			优先级规则从低往高
+				1.浏览器的默认规则
+				2.内外部样式表，就近原则-后定义者优先
+				3.内联样式
+		4.！important
+			!important加到谁的后面就优先使用谁
+			显示 
+				属性名
+					值 !important
+	CSS基础选择器
+		1.选择器的作用
+			规范页面中哪些元素可以使用声明好的样式，为了匹配样式
+			选择器分类
+				1.通用选择器 *
+					作用匹配页面上的所有元素
+					ex 
+						* { ... }
+				2.元素选择器
+					作用
+						设置页面上某种元素的默认形式
+					ex
+						p {
+							color:red;
+							}
+				3.类选择器
+					作用
+						定义页面上某个或某些元素的样式
+					语法
+						声明
+							.类名 { ... }
+						引用
+							<any class="类名"></any>
+				4.id选择器
+					作用
+						设置指定ID元素的样式
+					语法
+						声明
+							#id名 { ... }
+						引用
+							<any id="id名"></any>
+				5.特殊选择器
+					类选择器或id选择器与元素选择器的结合使用
+					语法
+						声明
+							元素名.类名 div.div1{}
+							元素名#id名 a#a1{}
+							<div class="div1"></div>
+							div {}   .div1{}
+				6.群组选择器
+					作用
+						将多个选择器放到一起进行样式的声明定义
+					语法
+						选择器1,选择器2,选择器3,... { 。。。 }
+						ex
+							div, .container, #footer {
+								width:100%;
+								}
+				7.后代选择器
+					作用
+						通过元素的后代关系匹配到元素
+					语法
+						选择器1 选择器2{ ... }
+						ex
+							<div class="container">
+								<p></p>
+								<div class="parent">
+									<p></p>
+								</div>
+							</div>	
+							找到container中所有的p(2个p)
+							.container p { ... }
+				8.子代选择器
+					作用
+						通过元素的子代匹配到元素
+					语法
+						选择器1>选择器2 { ... }
+						ex
+							找到直接子代的p(1个)
+							.container>p { ... }
+				9.伪类选择器
+					:hover
+						匹配鼠标悬停到元素上的效果
+					:focus
+						匹配元素获取焦点时的状态
+		尺寸和边框
+			尺寸
+				1.尺寸单位
+					px
+				2.尺寸的属性
+					宽度
+						width
+						max-width
+						min-width
+					高度
+						height
+						max-height
+						min-height
+					页面中可以设置宽和高的元素
+						p, div, h1-h6, ul, ol
+				3.溢出处理
+					一旦内容多，元素区域小的时候，就会产生溢出的效果
+					属性
+						overflow/overflow-x/overflow-y
+					值
+						hidden
+							溢出部分隐藏，不可见
+						visible
+							溢出部分可见，默认值
+						auto
+							溢出出现滚动条
+						scroll
+							滚动条
+			边框
+				属性
+					border:width style color;
+						width:以px为单位
+						style:solid实线 dotted虚线
+						color:边框颜色
+					border:none/0;
+					单边定义
+						border-left:width style color;
+					单属性定义
+						border-width:1px;
+						border-color:red;
+					单边属性定义
+						border-left-color:red;
+					边框倒角
+						将边框的直角倒成圆角
+						属性
+							border-radius
+						值
+							以px为单位
+				轮廓
+					边框的边框，绘制于边框外的一条线
+					属性
+						outline
+					声明
+						outline:width style color;
+					取消轮廓
+						outline:none/0;
+				框模型
+					实际占地大小
+						内边距+外边距+边框+内容(w/h)
+					外边距
+						元素与元素之间的距离
+						属性
+							margin
+						值
+							以px为单位的数值或者是%
+							特殊值：auto（块级元素水平居中）
+						单一边设置
+							margin-left
+							margin-right
+						简写方法
+							margin:? /? ?/? ? ?/? ? ? ?
+								一个值：适用于四个边
+								两个边：上下 左右
+								四个边：上 右 下 左
+							ex
+								div{margin:0 auto;}
+						自带外边距的元素
+							p, h1-h6, body, ol, ul
+					内边距
+						元素边框与内容之间的距离
+						属性
+							padding
+						值
+							以px为单位的数值或者是%(没有auto)
+		背景属性
+			属性
+				background
+			语法
+				background:color url(...) repeat attachment position;
+				position:x y;
+					x:背景图片水平偏移的位置
+						x为正：向右偏移
+						x为负：向左偏移
+					y:背景图片垂直偏移的位置
+						y为正：向下偏移
+						y为负：向上偏移
+				background:url() no-repeat position;
+					ex
+						background:url("1.jpg") no-repeat -20px 40px;
+				
