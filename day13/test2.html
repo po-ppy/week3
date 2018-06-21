@@ -25,14 +25,45 @@
             margin: 30px auto;
             background: url("1.png") no-repeat -300px -50px;
         }
+        #parent {
+            border: 1px solid red;
+            background: blue;
+            /*overflow: hidden;*/
+
+        }
+        #d1 {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            float: left;
+
+
+        }
+        #d2 {
+            width: 200px;
+            height: 200px;
+            background: red;
+            float: left;
+            /*clear: both;*/
+            /*float: right;*/
+        }
+        #d3 {
+            clear: both;
+        }
     </style>
 </head>
 <body>
+
+<div id="parent">
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</div>
     <div class="model"></div>
     <div class="model"></div>
     <div id="pad1">哈哈哈哈哈哈</div>
-    <div id="back">
+    <div id="back"></div>
 
-    </div>
+
 </body>
 </html>
