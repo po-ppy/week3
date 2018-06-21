@@ -13,17 +13,54 @@
         }
         .change {
             font-size: 30px;
+            background: yellow;
             color: red;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
         }
         .change:hover {
             color: blue;
         }
+        .change>p {
+            width: 800px;
+            height: 100px;
+            background: green;
+        }
+        #div1 {
+            width: 500px;
+            height: 500px;
+            border: 3px solid red;
+            border-radius: 50px;
+        }
+        #div2{
+            background: transparent;
+            width: 0;
+            height: 0;
+            border: 55px solid transparent;
+            border-left-color: yellow;
+           /* border-right-color: blue;
+            border-bottom-color: green;*/
+        }
+
+        input {
+            border: 3px dotted  #e4393c;
+            outline: 1px solid blanchedalmond;
+        }
+
     </style>
 </head>
 <body>
     <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto labore praesentium ratione sequi. Adipisci alias, dicta et explicabo facere facilis id ipsa odit, omnis perferendis porro quis recusandae totam voluptas.
     </div>
-    <h1 class="change">变色</h1>
+    <h1 class="change">变色
+    <p></p>
+    </h1>
+    <div id="div1">
+
+    </div>
+    <div id="div2"></div>
+    <input type="text" name="" id="">
 </body>
 </html>
