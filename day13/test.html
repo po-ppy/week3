@@ -32,6 +32,8 @@
             height: 500px;
             border: 3px solid red;
             border-radius: 50px;
+            position: relative;
+            top: 100px;
         }
         #div2{
             background: transparent;
@@ -47,11 +49,22 @@
             border: 3px dotted  #e4393c;
             outline: 1px solid blanchedalmond;
         }
+        .font-set {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            line-height: 100px;
+        }
+        #fix {
+            position: fixed;
+            top: 0;
+        }
+
 
     </style>
 </head>
 <body>
-    <div>
+    <div id="fix">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto labore praesentium ratione sequi. Adipisci alias, dicta et explicabo facere facilis id ipsa odit, omnis perferendis porro quis recusandae totam voluptas.
     </div>
     <h1 class="change">变色
@@ -62,5 +75,8 @@
     </div>
     <div id="div2"></div>
     <input type="text" name="" id="">
+    <div class="font-set">
+        linelineline
+    </div>
 </body>
 </html>

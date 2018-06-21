@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>學子詳情一點點</title>
+    <style type="text/css">
+        .all {
+            width: 610px;
+            height: 400px;
+            background: #d5d5d5;
+            position: relative;
+        }
+        .com {
+            position: absolute;
+            top: 80px;
+            left: 200px;
+            transition: all 300ms linear;
+
+        }
+        .com:hover {
+            transform: scale(1.1);
+        }
+        .text {
+            width: 245px;
+            height: 243px;
+            position: absolute;
+            top: 55px;
+            left: 65px;
+        }
+        .input_info {
+            width: 130px;
+            height: 40px;
+            padding: 5px 10px;
+            background: dodgerblue;
+            border: 0;
+            outline: none;
+            border-radius: 3px;
+            color: white;
+
+        }
+        .text_info {
+            font-size: 12px;
+            margin-bottom: 24px;
+        }
+        .price {
+            font-size: 24px;
+            color: #0AA1ED;
+            margin-bottom: 12px;
+        }
+        .name {
+           /* font-size: 32px;
+            color: #333;
+            margin: 0;*/
+            font-family: 微软雅黑;
+        }
+
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="text">
+        <div class="text_title">
+          <h2 class="name">Apple MacBook</h2>
+            <h2 class="name">Air系列</h2>
+            <p class="text_info">
+                酷睿双核i5处理器|256GB SSD|8GB内存|英特尔HD显卡620含共享显卡内存
+            </p>
+            <p class="price">
+                ￥6988.0
+            </p>
+            <p>
+                <input class="input_info" type="button" value="查看详情">
+            </p>
+        </div>
+    </div>
+    <img class="com" src="img/computer.png" alt="">
+</div>
+</body>
+</html>
