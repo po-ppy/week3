@@ -5,22 +5,190 @@
     <title>Title</title>
     <style type="text/css">
         body {
-            height: 400px;
+            /*height: 400px;*/
+            /*position: absolute;*/
+            margin: 0;
         }
         .footer {
             width: 1000px;
-            height: 120px;
+            height: 210px;
             background: #f5f5f5;
+            /*background: white;*/
             margin: 0 auto 0;
+            /*padding: 0;*/
             position: relative;
-            bottom: -1px;
+            bottom: 0;
             left: 0;
         }
+        .footer_four {
+            height: 210px;
+        }
+
+        ul,li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .four_ul_li p {
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        .four_ul {
+            padding: 0;
+            margin: 0;
+            height: 210px;
+        }
+        .four_ul:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .four_ul_li {
+            width: 250px;
+            float: left;
+            padding-top: 50px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 14px;
+            color: #666666 ;
+        }
+        .three_ul {
+            width: 900px;
+            height: 110px;
+            margin: 0 auto;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .three_ul:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .three_ul_li {
+            float: left;
+            width: 300px;
+            font-size: 12px;
+        }
+        .three_ul2:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .three_ul2_li {
+            width: 100px;
+            float: left;
+            /*padding: 10px 0;*/
+        }
+        .three_ul3_li {
+            padding: 5px 0;
+        }
+        .text_right {
+            text-align: right;
+        }
+        .text_left {
+            text-align: left;
+        }
+        .text_center {
+            text-align: center;
+        }
+        .right {
+            float: right;
+        }
+        .left {
+            float: left;
+        }
+        .footer_copy {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 10px;
+        }
+        .footer_final {
+            width: 100%;
+            padding-top: 70px;
+            height: 190px;
+            background: white;
+        }
+
+
     </style>
 </head>
 <body>
     <div class="footer">
+        <div class="footer_four">
+            <ul class="four_ul">
+                <li class="four_ul_li"><a href=""><img src="index/icon1.png" alt="">
+                    <p>品质保障</p>
+                </a></li>
+                <li class="four_ul_li"><a href=""><img src="index/icon2.png" alt="">
+                    <p>私人订制</p>
+                </a></li>
+                <li class="four_ul_li"><a href=""><img src="index/icon3.png" alt="">
+                    <p>学员专供</p>
+                </a></li>
+                <li class="four_ul_li"><a href=""><img src="index/icon4.png" alt="">
+                    <p>专属特权</p>
+                </a></li>
+            </ul>
+        </div>
 
+    </div>
+    <div class="footer_final">
+        <ul class="three_ul">
+            <li class="three_ul_li text_left">
+                <img src="index/logo.png" alt="">
+                <img src="index/footerFont.png" alt="">
+            </li>
+            <li class="three_ul_li text_center">
+                <ul class="three_ul2">
+                    <li class="three_ul2_li">
+                        <ul class="three_ul3">
+                            <li class="three_ul3_li"><a href=""><b>买家帮助</b></a></li>
+                            <li class="three_ul3_li"><a href="">新手指南</a></li>
+                            <li class="three_ul3_li"><a href="">服务保障</a></li>
+                            <li class="three_ul3_li"><a href="">常见问题</a></li>
+                        </ul>
+                    </li>
+                    <li class="three_ul2_li">
+                        <ul class="three_ul3">
+                            <li class="three_ul3_li"><a href=""><b>商家帮助</b></a></li>
+                            <li class="three_ul3_li"><a href="">商家入驻</a></li>
+                            <li class="three_ul3_li"><a href="">商家后台</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="three_ul2_li">
+                        <ul class="three_ul3">
+                            <li class="three_ul3_li"><a href=""><b>关于我们</b></a></li>
+                            <li class="three_ul3_li"><a href="">关于达内</a></li>
+                            <li class="three_ul3_li"><a href="">联系我们</a></li>
+                            <li class="three_ul3_li"><a href=""><img src="index/wechat.png" alt=""></a>&nbsp;&nbsp;<a
+                                    href=""><img src="index/sinablog.png" alt=""></a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="three_ul_li text_center">
+                <table>
+                    <tr>
+                        <td rowspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>学子商城客户端</td>
+                        <td rowspan="3"><img src="index/erweima.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="index/ios.png" alt=""></td>
+                        <!--<td></td>-->
+                    </tr>
+                    <tr>
+                        <td><img src="index/android.png" alt=""></td>
+                        <!--<td></td>-->
+                    </tr>
+                </table>
+            </li>
+        </ul>
+        <div class="footer_copy">&copy;2017 达内科技有限公司 版权所有 京ICP备08000853号-75</div>
     </div>
 </body>
 </html>
