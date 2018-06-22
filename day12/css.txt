@@ -376,3 +376,39 @@ CSS语法规范
 								content:"";
 								clear:both;
 								}
+	显示方式
+		属性
+			display
+		取值
+			block 
+				块级元素，独自占一行，可以设置宽高
+			inline-block 
+				行内块元素，多个在一行显示，可以设置宽高
+			inline
+				行内元素，多个在一行显示，不能设置宽高
+			none
+				不占据页面空间也不显示
+	显示效果
+		属性
+			visibility
+		取值
+			visible
+				元素可见
+			hidden
+				元素不可见，隐藏
+	区别
+		display:none
+			不占据页面空间
+		visibility:hidden
+			占据页面空间
+	列表
+		语法
+			<ul><li></li></ul>
+		操作语法
+			list-style
+				标识属性
+				取值
+					none
+			列表的浮动应用
+				
+			
