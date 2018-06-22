@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学子商场头部</title>
+    <style type="text/css">
+        body {
+            margin: 0px;
+            background: #f5f5f5;
+        }
+        .header {
+            width: 1000px;
+            height: 120px;
+            background: #f5f5f5;
+            margin: 50px auto 0;
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+        .leader {
+            position: relative;
+            top: 70px;
+        }
+        .leader_ul:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .leader_ul, .login_ul {
+            list-style: none;
+            padding-left: 0px;
+        }
+        .login_ul:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .leader_ul_li {
+            float: left;
+            margin-right: 60px;
+            font-size: 16px;
+            font-family: 黑体;
+            color: #cccccc;
+        }
+        .logo_search_login:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .logo_search_login {
+            position: relative;
+            top: 3px;
+        }
+        .logo {
+            float: left;
+            margin-right: 40px;
+        }
+        .search {
+            position: relative;
+            width: 410px;
+            height: 34px;
+            border: 1px solid #0AA1ED;
+            float: left;
+        }
+        .search_input {
+            width: 280px;
+            height: 32px;
+            border: 0;
+            outline: none;
+            background-color: #f5f5f5;
+            padding-left: 10px;
+
+        }
+        .search_split {
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+        .search_img {
+            position: absolute;
+            left: 373px;
+            /*top: 1px;*/
+        }
+        .login_ul_li {
+            float: left;
+            height: 23px;
+            margin-right: 10px;
+            font-size: 14px;
+            vertical-align: middle;
+            font-family: 黑体;
+            color: #808080;
+        }
+        .login {
+            font-size: 12px;
+            float: right;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo_search_login">
+            <div class="logo"><img src="header/logo.png" alt=""></div>
+            <div class="search">
+                <input class="search_input" type="text" placeholder="请输入您要搜索的内容">
+                <span class="search_split">
+                    分类搜索
+                    <img src="header/header_normal.png" alt="倒三角">
+                </span>
+                <img class="search_img" src="header/search.png" alt="">
+            </div>
+            <div class="login">
+                <ul class="login_ul">
+                    <li class="login_ul_li"><img src="header/care.png" alt=""> </li>
+                    <li class="login_ul_li">|</li>
+                    <li class="login_ul_li"><img src="header/order.png" alt=""></li>
+                    <li class="login_ul_li">|</li>
+                    <li class="login_ul_li"><img src="header/shop_car.png" alt=""></li>
+                    <li class="login_ul_li">|</li>
+                    <li class="login_ul_li"><span>注册</span></li>
+                    <li class="login_ul_li">|</li>
+                    <li class="login_ul_li"><span>登录</span></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="leader">
+            <ul class="leader_ul">
+                <li class="leader_ul_li">首页</li>
+                <li class="leader_ul_li">学习用品</li>
+                <li class="leader_ul_li">私人订制</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
