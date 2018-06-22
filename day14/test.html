@@ -4,19 +4,106 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style type="text/css">
+/*
         body{
             text-align: center;
         }
         ul {
             max-width: 300px;
             list-style: none;
-            /*overflow: hidden;*/
+            !*overflow: hidden;*!
         }
         li {
             float: left;
             margin-right: 20px;
+*/
+
+
+        /*从这里开始*/
+        a {
+            text-decoration: none;
+        }
+        ul, li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        p {
+            margin: 0;
+        }
+        #container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #banner {
+            width: 1000px;
+            overflow: hidden;
+            position: absolute;
+        }
+        #banner ul {
+            width: 4000px;
+        }
+        #banner ul>li {
+            width: 1000px;
+            float: left;
+        }
+
+        .aside {
+            padding: 40px 20px;
+            background: #E3E3E3;
+            vertical-align: middle;
+            position: absolute;
+            border-radius: 3px;
+            transition: all 500ms linear;
 
         }
+        .aside:hover {
+            background: grey;
+        }
+        .btn_left img {
+            position: absolute;
+            top: 30px;
+            left: 10px;
+        }
+        .btn_right img {
+            position: absolute;
+            top: 30px;
+            right: 10px;
+        }
+/*        .aside img {
+            position: absolute;
+            top: 30px;
+            left: 10px;
+        }*/
+        .btn_left {
+            top: 150px;
+            left: 5px;
+        }
+        .btn_right {
+            top: 150px;
+            right: 5px;
+        }
+        #banner .circle {
+            width: 0px;
+            height: 0px;
+            border: 5px solid white;
+            border-radius: 50%;
+            margin: 5px 10px;
+            transition: all 300ms linear;
+        }
+        #banner .desc {
+            position: absolute;
+            width: 150px;
+            bottom: 20px;
+            left: 425px;
+        }
+        #banner .circle:hover {
+            border-color: blue;
+        }
+
+/*到这结束*/
+
+
     </style>
 </head>
 <body>
@@ -26,5 +113,27 @@
     <li>学习用品</li>
     <li>私人订制</li>
 </ul>
+<div id="container">
+    <div id="banner">
+        <ul>
+            <li><a href=""><img src="../day13/img/banner1.png" alt=""></a></li>
+            <li><a href=""><img src="../day13/img/banner2.png" alt=""></a></li>
+            <li><a href=""><img src="../day13/img/banner3.png" alt=""></a></li>
+            <li><a href=""><img src="../day13/img/banner4.png" alt=""></a></li>
+        </ul>
+        <a class="aside btn_left" href="">
+            <img src="index/arrow-left.png" alt="">
+        </a>
+        <a class="aside btn_right" href="">
+            <img src="index/arrow-right.png" alt="">
+        </a>
+        <ul class="desc">
+            <li class="circle"><a href=""></a></li>
+            <li class="circle"><a href=""></a></li>
+            <li class="circle"><a href=""></a></li>
+            <li class="circle"><a href=""></a></li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
