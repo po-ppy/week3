@@ -3,10 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style type="text/css">
+        .info_all{
+            position: relative;
+            width: 1000px;
+            height: 610px;
+            margin: auto;
+
+        }
+        .info_1, .info_2, .info_3, .info_4, .info_5, .info_6 {
+            position: relative;
+            background: #E8E8E8;
+            margin: 0px ;
+            /*border: 1px solid grey;*/
+            float: left;
+        }
+        .info_1 {
+            margin-right: 10px;
+        }
+        .info_1, .info_2 {
+            margin-bottom: 4px;
+        }
+        .info_3, .info_4, .info_5, .info_6 {
+            margin: 4px 4px 0px;
+        }
+        .info_1_com, .info_2_com, .info_3_com, .info_4_com, .info_5_com, .info_6_com {
+            position: absolute;
+            transition: all 300ms linear;
+        }
+        .info_1 {
+
+            width: 608px;
+            height: 378px;
+        }
+        .info_2 {
+            width: 375px;
+            height: 378px;
+        }
+        .info_1_com {
+            /*position: absolute;*/
+            top: 60px;
+            left: 180px;
+            /*transition: all 300ms linear;*/
+
+        }
+        .info_1_com:hover, .info_2_com:hover, .info_3_com:hover {
+            transform: scale(1.1);
+        }
+        .info_4_com:hover, .info_5_com:hover, .info_6_com:hover {
+            transform: scale(1.1);
+        }
+        .info_1_text {
+            width: 245px;
+            height: 243px;
+            position: absolute;
+            top: 30px;
+            left: 60px;
+        }
+        .info_1_input_info {
+            width: 130px;
+            height: 40px;
+            padding: 5px 10px;
+            background: dodgerblue;
+            border: 0;
+            outline: none;
+            border-radius: 3px;
+            color: white;
+
+        }
+        .info_1_text_info {
+            font-size: 12px;
+            margin-bottom: 24px;
+            color: #333333;
+        }
+        .info_1_price {
+            font-size: 24px;
+            color: #0AA1ED;
+            margin-bottom: 12px;
+        }
+        .info_1_name {
+            /* font-size: 32px;
+             color: #333;
+             margin: 0;*/
+            font-size: 28px;
+            font-family: 微软雅黑;
+        }
+        .info_2_text {
+            width: 245px;
+            height: 243px;
+            position: absolute;
+            top: 30px;
+            left: 15px;
+        }
+        .info_2_com {
+            width: 262px;
+            height: 200px;
+            top: 140px;
+            left: 60px;
+        }
+        .info_3 {
+            width: 378px;
+            height: 220px;
+            margin-left: 0px;
+        }
+        /*.info_3_text_title {
+            width: 120px;
+        }*/
+        .info_3_text {
+            width: 130px;
+            /*height: 243px;*/
+            position: absolute;
+            top: 30px;
+            left: 20px;
+        }
+        .info_3_name {
+            margin-bottom: 0;
+            font-size: 18px;
+        }
+        .info_3_price {
+            margin-top: 0;
+            font-size: 20px;
+            color: #25a7e9;
+        }
+        .info_3_com {
+            top: 44px;
+            left: 160px;
+        }
+        .info_4_com {
+            /*top: 44px;*/
+            left: -4px;
+        }
+        .info_4_price {
+            font-size: 24px;
+            color: #0AA1ED;
+            margin-bottom: 12px;
+        }
+        .info_4, .info_5, .info_6 {
+            /*text-align: center;*/
+            width: 200px;
+            height: 220px;
+        }
+        .info_6 {
+            width: 192px;
+            margin-right: 0px;
+        }
+        .info_4_text {
+            width: 160px;
+            /*height: 243px;*/
+            position: absolute;
+            top: 120px;
+            left: 10px;
+            text-align: center;
+            /*font-size: 6px;*/
+        }
+        .info_4_name {
+            /*margin-bottom: 0;*/
+            font-size: 12px;
+        }
+        .info_4_price {
+            margin-top: 0;
+            margin-bottom: 6px;
+            font-size: 22px;
+            color: #25a7e9;
+        }
+        .info_4_input_info {
+
+            width: 100px;
+            height: 26px;
+            padding: 5px 10px;
+            background: dodgerblue;
+            border: 0;
+            outline: none;
+            border-radius: 2px;
+            color: white;
+            font-size: 12px;
+
+        }
+        .info_4_name {
+            margin-bottom: 0px;
+        }
+
+
+
     </style>
 
 </head>
 <body>
+    <div id="info" class="info_all">
+        <div class="info_1">
+            <div class="info_1_text">
+                <div class="info_1_text_title">
+                    <h2 class="info_1_name">Apple MacBook <br> Air系列</h2>
+                    <!--<h2 class="name">Air系列</h2>-->
+                    <p class="info_1_text_info">
+                        酷睿双核i5处理器|256GB SSD|8GB内存|英特尔HD显卡620含共享显卡内存
+                    </p>
+                    <p class="info_1_price">
+                        ￥6988.0
+                    </p>
+                    <p>
+                        <input class="info_1_input_info" type="button" value="查看详情">
+                    </p>
+                </div>
+            </div>
+            <img class="info_1_com" src="img/computer.png" alt="">
+        </div>
+        <div class="info_2">
+            <div class="info_2_text">
+                <div class="info_1_text_title">
+                    <h2 class="info_1_name">小米Air金属超 <br> 轻薄</h2>
+                    <p class="info_1_text_info">
+                        酷睿双核i5处理器|512GB SSD|2GB 内存|英 特尔HD独立显卡
+                    </p>
+                    <p class="info_1_price">
+                        ￥3488.0
+                    </p>
+                    <p>
+                        <input class="info_1_input_info" type="button" value="查看详情">
+                    </p>
+                </div>
+            </div>
+            <img class="info_2_com" src="img/study_computer_img2.png" alt="">
+        </div>
+        <div class="info_3">
+            <div class="info_3_text">
+                <div class="info_3_text_title">
+                    <p class="info_3_name"><b>联想E4800C 轻薄系列</b></p>
+                    <p class="info_3_price">
+                        ￥5399.0
+                    </p>
+                    <p>
+                        <input class="info_1_input_info" type="button" value="查看详情">
+                    </p>
+                </div>
+            </div>
+            <img class="info_3_com" src="img/study_computer_img3.png" alt="">
+        </div>
+        <div class="info_4">
+            <img class="info_4_com" src="img/study_computer_img4.png" alt="">
+            <div class="info_4_text">
+                <div class="info_3_text_title">
+                    <p class="info_4_name"><b>华硕RX310 金属超级本</b></p>
+                    <p class="info_4_price">
+                        ￥5399.00
+                    </p>
+                    <!--<p>-->
+                        <input class="info_4_input_info" type="button" value="查看详情">
+                    <!--</p>-->
+                </div>
+            </div>
 
+        </div>
+        <div class="info_5">
+            <img class="info_4_com" src="img/study_computer_img5.png" alt="">
+            <div class="info_4_text">
+                <div class="info_3_text_title">
+                    <p class="info_4_name"><b>联想小新700 电竞版游戏本</b></p>
+                    <p class="info_4_price">
+                        ￥6299.00
+                    </p>
+                    <!--<p>-->
+                    <input class="info_4_input_info" type="button" value="查看详情">
+                    <!--</p>-->
+                </div>
+            </div>
+        </div>
+        <div class="info_6">
+            <img class="info_4_com" src="img/study_computer_img3.png" alt="">
+            <div class="info_4_text">
+                <div class="info_3_text_title">
+                    <p class="info_4_name"><b>戴尔灵越燃7000 轻薄窄边</b></p>
+                    <p class="info_4_price">
+                        ￥5199.00
+                    </p>
+                    <!--<p>-->
+                    <input class="info_4_input_info" type="button" value="查看详情">
+                    <!--</p>-->
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
