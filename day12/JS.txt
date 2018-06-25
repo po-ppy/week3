@@ -1,0 +1,155 @@
+JavaScript
+	概念
+		javascript简称js，运行于JS解释器或引擎中的脚本语言
+	运行
+		1.安装独立的js解释器(node)
+		2.嵌入在浏览器内核中的js解释器
+			1.直接在浏览器console控制台输入脚本运行
+			2.将js脚本嵌入到html页面中执行
+				1.通过元素事件执行js脚本
+					<any onclick="console.log('点击触发')"></any>
+				2.在script中编写js脚本
+					<script>js脚本</script>
+				3.使用外部的js文件
+					1.创建js脚本文件并编写js代码
+					2.在网页上引入js脚本文件
+						<script src="path/to/sourceFile"></script>
+	js通用语法
+		1.所有语句必须以分号结尾
+		2.严格区分大小写
+		3.注释
+			//单行注释
+			/* 多行注释 */
+	变量和常量
+		变量
+			声明
+				var a;
+			赋值
+				变量名=值;  a=10;
+			声明并赋值
+				var 变量名=值;  var a=10;
+			注意
+				只声明了一个变量并没有赋值时
+					var uname; console.log(uname);//undefined
+				给未声明的变量赋值
+					age=12;
+				使用一个既未声明也没赋值的变量
+					console.log(ing);//报错
+				在一条语句中同时声明多个变量
+					var unname='dd',age=12;
+				变量命名规范
+					1.不能使用js的保留关键字
+					2.只能使用数字、字母、下划线和$
+						var $uname;//正确
+						var #uname;//错误
+		常量
+			一旦声明就不能改变的量
+			声明
+				const 变量名;
+			赋值
+				变量名=值;
+			声明并赋值
+				const 变量名=值;
+	数据类型
+		原始类型
+			number 数字
+				整数
+					二进制
+					八进制
+					十六进制
+				浮点数
+					带小数的数字
+			string 字符创类型
+				指一系列的文本内容，使用过程中必须用''或""括起来，否则报错。
+			boolean 布尔类型
+				程序中真或假的结果
+				取值
+					true 真
+					false 假
+				var isRain=true;
+			null
+			undefined
+		引用类型
+	常用方法
+		typeof
+			判断一个数据的类型
+			typeof(数据);
+			var a=10; var uname='tom'; console.log(typeof(a));//number console.log(typeof(uname));//string
+		toString
+			将任意类型的数据转为字符串
+			变量.toString();
+			var age=20; age = age.toString();
+		parseInt
+			将任意类型的数据转为整数
+			var result=parseInt(变量);
+			只要是从页面上拿到的数据都是字符串类型，字符串类型做加法运算，会默认改成拼接运算
+			做加法运算时，只要有一个数据是字符串就是拼接运算
+		parseFloat
+			将任意类型的数据转为浮点数
+		Number
+			将任意类型的数据转为数字
+			只能转纯数字，只要变量里含有非数字的字符，结果就位NaN
+			var result = Number(变量);
+		isNaN
+			判断是不是一个数字
+			返回值为boolean
+			是数字：false
+			不是数字：true
+			console.log(isNaN(12));//false
+			console.log(isNaN("num"));//true、
+	运算符和表达式
+		表达式
+			只有运算符和操作数组成的式子
+			15+8=23;var x = 12;var y=x=23;
+		运算符
+			算术运算符 + - * / % ++ --
+				+
+					字符串+字符串=字符串的拼接
+					字符串+数字=字符串的拼接
+						"a"+12="a12";
+					字符串+布尔值=字符串的拼接
+						"a"+true="atrue";
+					...只要有字符串参加的+运算就是拼接
+					数字+布尔值=数字
+						1+true=1+1=2
+					布尔值+布尔值=数字
+						true+true=1+1=2
+				%
+					取余数
+				++
+					自增运算
+					a++ => a=a+1
+					++a => a=a+1
+				--
+					自减运算
+					a-- => a=a-1
+					--a => a=a-1
+			关系运算符 > < >= <= != == !== ===
+				规则
+					只要两边有一个值是number类型，另一个变量也会转为number类型进行比较(Number)（!== === 不适用）
+					如果运算符两边都为字符串，用unicode码去比较
+					返回结果都是boolean值
+					ex
+						5>"10";//5>Number("10") --> false
+						"5">"10";
+						"tom">"jim";
+					转unicode码
+						变量.charCodeAt(); 默认只会转字符串的首个字符
+						想要指定转换某一个下标为i的字符
+							变量.charCodeAt(i);
+						"5".charCodeAt()
+						多个字符组成的字符串进行比较是，会默认从第一个字符开始比较，如果前面都无法比较出来，是的字符多谁大
+				1.> < >= <=
+				2.!= !==
+					!= 会有自动转换，就不会判断类型
+					!==不自动转换，要判断类型
+				3.== ===
+					== 自动转换，不判断类型
+					=== 不自动转换，要判断类型
+					var a=3,b="3";
+					console.log(a==b);//true
+					var c="3a";
+					console.log(a==b);//Number(b) -> NaN
+					NaN不等于不大于不小于任何数，包括NaN
+					NaN与任何数据进行比较时结果都为false
+					NaN==NaN false
