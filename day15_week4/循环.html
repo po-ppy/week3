@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>循环</title>
+</head>
+<body>
+<script>
+    var a = 1;
+    var add = 0;
+    while(a <= 10){
+        add += a++;
+    }
+    document.write(add);
+  // 循环
+  var num = parseInt(Math.random()*10);
+  var a = prompt("请输入一个数字");
+  while(true){
+      if(a > num){
+          a = prompt("大了，请重新输入");
+      }else if(a < num){
+          a = prompt("小了，请重新输入");
+      }else{
+          alert("牛逼！！\n就是 " + a);
+          break;
+      }
+  }
+for(var a = 1, sum = 0; a<=10;a++){
+    sum += a;
+    console.log(sum);
+}
+
+
+</script>
+</body>
+</html>

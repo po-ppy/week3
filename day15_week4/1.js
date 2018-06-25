@@ -42,3 +42,18 @@ var temp2 = ++temp1;
 // temp1 = ++temp1;
 console.log(temp1);
 console.log(temp2);
+
+var score = prompt("输入分数");
+// var result = score>=90?"优秀":"不优秀";
+// var result = score>=90?"优秀":(score>=80?"良好":(score>=60?"及格":"不及格"));
+var result;
+if(score>=90){
+    result = "优秀";
+}else if (score >= 80){
+    result = "良好";
+} else if (score >= 60){
+    result = "及格";
+} else {
+    result = "不及格";
+}
+console.log(result);
