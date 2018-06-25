@@ -42,10 +42,25 @@
             padding-left: 40px;
             padding-top: 30px;
         }
-        .bannerImgDiv {
+        .titleText2 {
+            color: #595959;
+            font-family: 微软雅黑, serif;
+            font-size: 30px;
+            padding-left: 30px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+        .top_bannerImgDiv {
             margin: 10px;
             width: 224px;
             height: 318px;
+            float: left;
+
+        }
+        .shipin_bannerImgDiv {
+            margin: 2px;
+            width: 240px;
+            height: 340px;
             float: left;
 
         }
@@ -58,10 +73,10 @@
         .margin-left-30 {
             margin-left: 30px;
         }
-        #banner5Img{
+        .banner5Img{
             height: 338px;
         }
-        #top_banner:after{
+        .top_banner:after{
             display:block;
             content:"";
             clear:both;
@@ -85,6 +100,28 @@
             float: left;
             margin: 6px 210px 6px 6px;
         }
+
+        .shipin_small_title {
+            font-size: 14px;
+            font-family: 微软雅黑;
+        }
+        .shipin_small_title>ul:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .shipin_small_title ul {
+            position: relative;
+            top: -20px;
+            left: 30px;
+        }
+
+        .shipin_small_title ul>li {
+            float: left;
+            margin: 6px 210px 6px 6px;
+        }
+
+
         .split {
             height: 170px;
         }
@@ -175,22 +212,22 @@
             <div class="titleText">
                 汉服 HANFU
             </div>
-            <div id="banner5Img" class="margin-left-30">
-                <div class="bannerImgDiv">
+            <div id="banner5Img" class="banner5Img margin-left-30">
+                <div class="top_bannerImgDiv">
                     <!--图片大小比例224x318 !!!-->
                     <img src="img/hanfu_banner1.jpg" alt="banner1" class="bannerImg" >
                 </div>
-                <div class="bannerImgDiv">
-                    <img src="img/hanfu_banner2.jpg" alt="banner1" class="bannerImg" >
+                <div class="top_bannerImgDiv">
+                    <img src="img/hanfu_banner2.jpg" alt="banner2" class="bannerImg" >
                 </div>
-                <div class="bannerImgDiv">
-                    <img src="img/hanfu_banner3.jpg" alt="banner1" class="bannerImg" >
+                <div class="top_bannerImgDiv">
+                    <img src="img/hanfu_banner3.jpg" alt="banner3" class="bannerImg" >
                 </div>
-                <div class="bannerImgDiv">
-                    <img src="img/hanfu_banner4.jpg" alt="banner1" class="bannerImg" >
+                <div class="top_bannerImgDiv">
+                    <img src="img/hanfu_banner4.jpg" alt="banner4" class="bannerImg" >
                 </div>
-                <div class="bannerImgDiv">
-                    <img src="img/hanfu_banner5.jpg" alt="banner1" class="bannerImg" >
+                <div class="top_bannerImgDiv">
+                    <img src="img/hanfu_banner5.jpg" alt="banner5" class="bannerImg" >
                 </div>
             </div>
             <br>
@@ -244,35 +281,35 @@
             </div>
         </div>
         <div class="shipin_banner">
-            <div class="titleText">
-                配饰 ACCESSORIES
+            <div class="titleText2">
+                配饰 <span style="color: #d7d4d7;">ACCESSORIES</span>
             </div>
-            <div id="banner5Img" class="margin-left-30">
-                <div class="bannerImgDiv">
+            <div id="banner5Img2" class="banner5Img margin-left-30">
+                <div class="shipin_bannerImgDiv">
                     <!--图片大小比例224x318 !!!-->
                     <img src="img/hanfu_banner1.jpg" alt="banner1" class="bannerImg" >
                 </div>
-                <div class="bannerImgDiv">
-                    <img src="img/hanfu_banner2.jpg" alt="banner1" class="bannerImg" >
+                <div class="shipin_bannerImgDiv">
+                    <img src="img/hanfu_banner2.jpg" alt="banner2" class="bannerImg" >
                 </div>
-                <div class="bannerImgDiv">
-                    <img src="img/hanfu_banner3.jpg" alt="banner1" class="bannerImg" >
+                <div class="shipin_bannerImgDiv">
+                    <img src="img/hanfu_banner3.jpg" alt="banner3" class="bannerImg" >
                 </div>
-                <div class="bannerImgDiv">
-                    <img src="img/hanfu_banner4.jpg" alt="banner1" class="bannerImg" >
+                <div class="shipin_bannerImgDiv">
+                    <img src="img/hanfu_banner4.jpg" alt="banner4" class="bannerImg" >
                 </div>
-                <div class="bannerImgDiv">
-                    <img src="img/hanfu_banner5.jpg" alt="banner1" class="bannerImg" >
+                <div class="shipin_bannerImgDiv">
+                    <img src="img/hanfu_banner5.jpg" alt="banner5" class="bannerImg" >
                 </div>
             </div>
             <br>
-            <div class="small_title">
+            <div class="shipin_small_title">
                 <ul>
-                    <li><a href="">曲裾</a></li>
-                    <li><a href="">褙子</a></li>
-                    <li><a href="">襦裙</a></li>
-                    <li><a href="">直裾</a></li>
-                    <li><a href="">高腰襦裙</a></li>
+                    <li><a href="">荷包</a></li>
+                    <li><a href="">宫绦</a></li>
+                    <li><a href="">璎珞</a></li>
+                    <li><a href="">发簪</a></li>
+                    <li><a href="">玉扣</a></li>
                 </ul>
             </div>
         </div>
