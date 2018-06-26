@@ -115,18 +115,21 @@
 </ul>
 <div id="container">
     <div id="banner">
-        <ul>
+        <div id="banner_img">
+
+        </div>
+        <!--<ul>
             <li><a href=""><img src="../day13/img/banner1.png" alt=""></a></li>
             <li><a href=""><img src="../day13/img/banner2.png" alt=""></a></li>
             <li><a href=""><img src="../day13/img/banner3.png" alt=""></a></li>
             <li><a href=""><img src="../day13/img/banner4.png" alt=""></a></li>
-        </ul>
+        </ul>-->
         <a class="aside btn_left" href="">
             <img src="index/arrow-left.png" alt="">
         </a>
         <a class="aside btn_right" href="">
             <img src="index/arrow-right.png" alt="">
-        </a>
+        </a>S
         <ul class="desc">
             <li class="circle"><a href=""></a></li>
             <li class="circle"><a href=""></a></li>
@@ -136,4 +139,15 @@
     </div>
 </div>
 </body>
+<script>
+    var banner_img_arr = ["banner1.png", "banner2.png", "banner3.png", "banner4.png"];
+    var banner_li_common = ["<li><a href=\"\"><img src=\"index/", "\" alt=\"\"></a></li>"];
+    var ul_str = "<ul>";
+    for(var i in banner_img_arr){
+        ul_str += banner_li_common.join(banner_img_arr[i]);
+    }
+    ul_str += "</ul>";
+    // console.log(ul_str);
+    document.getElementById("banner_img").innerHTML = ul_str;
+</script>
 </html>
