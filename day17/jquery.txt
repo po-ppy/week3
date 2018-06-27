@@ -1,0 +1,42 @@
+jquery
+	是一个简化JS和DOM操作的函数库，也叫作框架
+	使用方法
+		1.引入jquery文件
+			引入本地的jquery文件
+				<script src="js/jquery-1.11.3.js"></script>
+			引入官网上的jquery文件
+				https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.js
+	查找 选择器
+		$(".class选择器")
+		$("#id选择器")
+		$("元素选择器")
+		$("p+div")//兄弟
+		$("ul>li")
+		$("ul a")
+		$("*")
+		$("li:first")
+			获取第一个元素(同级）
+			<ul>
+				<li></li>
+				<li></li>
+			</ul>
+		:last
+			获取最后一个元素
+		:even
+			索引值为偶数的元素(0开始)
+		:odd
+			索引值为奇数的元素(0开始)
+		:eq(n)
+			索引值为n的元素(0开始)
+		:gt(index)
+			匹配所有大于给定索引值得元素
+		:lt(index)
+			匹配所有小于给定索引值得元素
+		[attr]
+			匹配包含给定属性的元素
+		[attr=value]
+			匹配给定的属性是某个值特定值得元素
+			ex
+				$("li#list1")
+				$([id])
+		
