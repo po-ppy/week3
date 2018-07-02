@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.3.js"></script>
+    <style>
+        .lf {
+            float: left;
+        }
+        .txt {
+            /*display: none;*/
+
+        }
+    </style>
+</head>
+<body>
+<a href="#123">123</a>
+<!--<img src="1.jpg" alt="">-->
+<div class="txt">
+    <p>it is p</p>
+</div>
+<button id="btn1">toggle</button>
+<input type="text" value="tom">
+<select name="" id="">
+    <option value="sx">陕西</option>
+    <option value="hn">河南</option>
+</select>
+<input type="checkbox" id="chk" value="chk1">
+<!--<div>1</div>
+<div>2</div>-->
+<button id="btn">哈哈哈</button>
+<p class="txt1">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eius enim esse fugiat iste laudantium libero, magni minus modi nisi numquam pariatur quam quibusdam quod rem sequi tempore? Aspernatur, assumenda.
+</p>
+</body>
+<script>
+/*    var imgSrc = $("img").attr("src");
+    console.log(imgSrc);*/
+    // $("img").attr("src","2.jpg");
+/*    $("img").attr({"src":"3.jpg", "alt":"图片不存在"})
+    $("div").addClass("lf");
+    $("div").removeClass("lf");
+    $("div").toggleClass("lf");*/
+
+    var html = $(".txt").html();
+    console.log(html);
+    $(".txt").html("<ul><li>1</li></ul>");
+    var lis = "";
+    var imgs=["img/banner1.png", "img/banner2.png", "img/banner3.png"];
+    for(var i = 0;i < imgs.length; i++){
+        var str="<li><img src='"+imgs[i]+"'></li>";
+        // console.log(str);
+        lis = lis.concat(str);
+    }
+    lis = "<ul>" + lis + "</ul>";
+    console.log(lis);
+    $(".txt").html(lis);
+    // $(".txt li").css("float","left");
+    $(".txt li").css({"float":"left","list-style":"none"});
+    console.log($(".txt li"));
+    console.log($(".txt").height());
+    $("select").change(function () {
+        console.log($(this).val());
+    });
+    $("#btn").click(function () {
+        alert("button click");
+    });
+    $(".txt img").click(function () {
+        alert("img click");
+    });
+/*    $(".txt").on("click","li",function () {
+        console.log($(this));
+    })
+    // $(".txt").show("slow");
+    $(".txt").slideDown("slow");
+    $(".txt").slideUp("slow");*/
+    $("btn1").on("click",function () {
+        $(".txt1").animate({
+            width: "800px",
+            height: "200px",
+            background: "red"
+        },1000)
+    })
+/*    console.log($("input").val());
+    console.log($("select").val());
+    console.log($("#chk").val());*/
+</script>
+
+</html>
