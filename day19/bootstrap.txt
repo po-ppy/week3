@@ -27,3 +27,10 @@ bootstrap
 				</div>
 			</div>
 		</div>
+	媒体查询
+		语法
+			@media screen and (min-width:**px) and (max-width:**px){
+				选择器:{
+					属性:值;
+				}
+			}
